@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasir's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="hero">
+  <h1>👋 Welcome to My Portfolio</h1>
+  <p>I'm Lemoh Yasir — a passionate tech learner and aspiring web developer 💻🚀</p>
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <section id="about" class="fade-in">
+    <h2>About Me</h2>
+    <p>Hi, I'm Lemoh Yasir Ayinde — a Computer Science graduate with a passion for web development and technology. I'm focused on building projects and gaining real-world experience in the tech field.</p>
+  </section>
+
+  <section id="skills" class="fade-in">
+    <h2>🛠️Skills</h2>
+    <ul>
+      <li>HTML5 & CSS3</li>
+      <li>JavaScript (Beginner–Intermediate)</li>
+      <li>Responsive Web Design</li>
+      <li>Basic Frontend Development</li>
+    </ul>
+  </section>
+  <section id="projects" class="fade-in">
+  <h2>💡 Projects</h2>
+  <div class="project">
+    
+    <h3>Password Generator</h3>
+    <p>A JavaScript-based password generator that lets users choose password length and characters. Built using HTML, CSS, and JavaScript.</p>
+  </div>
+</section>
+<section id="contact" class="fade-in">
+  <h2>📬 Contact</h2>
+  <p>You can reach me via:</p>
+  <ul>
+    <li>Email: <a href="mailto:lemohyasir@gmail.com">lemohyasir@gmail.com</a></li>
+    <li>Phone: +234-916-276-3964</li>
+  </ul>
+</section>
+
+</main>
+<a href="#hero" id="backToTop">⬆️ Back to Top</a>
+
+<script>
+  window.addEventListener("scroll", function () {
+    const backToTop = document.getElementById("backToTop");
+    if (window.scrollY > 100) {
+      backToTop.style.display = "inline-block";
+    } else {
+      backToTop.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>
+
