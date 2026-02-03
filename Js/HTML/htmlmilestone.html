@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Milestone Project Part 1 - Sneakers Theme</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Layout Sections */
+        header, main, footer {
+            padding: 20px;
+        }
+
+        header {
+            background-color: #f4f4f4;
+        }
+
+        main {
+            background-color: #fff;
+        }
+
+        footer {
+            background-color: #f4f4f4;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        /* Table Styles */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Form Styles */
+        form {
+            max-width: 600px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: Arial, sans-serif;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        fieldset {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+        }
+
+        /* Question & Options Styles */
+        .question {
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .options {
+            display: flex;
+            gap: 60px;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+
+        .options label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 0;
+        }
+
+        .options input {
+            width: auto;
+            margin: 0;
+        }
+
+        /* Button Styles */
+        button {
+            width: 260px;
+            padding: 14px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Figure Styles */
+        figure {
+            text-align: center;
+        }
+
+        figcaption {
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        /* Video Styles */
+        video {
+            max-width: 100%;
+            height: auto;
+            margin: 15px 0;
+        }
+
+        /* Footer Links */
+        footer ul {
+            list-style: none;
+            margin: 15px 0;
+        }
+
+        footer li {
+            margin-bottom: 8px;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        header a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header-section">
+        <h1>👟 SneakerHub</h1>
+        <p>Welcome to SneakerHub, your ultimate destination for the latest and greatest sneakers.</p>
+        <a href="#contact-form">Contact Us</a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Introduction Section -->
+        <section class="intro-section">
+            <h2>About SneakerHub</h2>
+            <p>At SneakerHub, we are passionate about sneakers. From iconic classics to cutting-edge designs, we offer a wide range of footwear to elevate your style and comfort.</p>
+            <hr>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <h2>Watch Our Sneaker Showcase</h2>
+            <p>Check out this video featuring our top sneaker picks and trends.</p>
+            <video controls autoplay muted loop>
+                <source src="Sneakers.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <hr>
+        </section>
+
+        <!-- Image Section -->
+        <section class="image-section">
+            <h2>Featured Sneakers</h2>
+            <p>Discover our collection of premium sneakers designed for performance and fashion.</p>
+            <figure>
+                <img src="The Sneakers hub.jpg" alt="A display of stylish sneakers in various colors" style="max-width: 100%; height: auto;">
+                <figcaption>Our latest sneaker lineup, perfect for any occasion.</figcaption>
+            </figure>
+            <hr>
+        </section>
+
+        <!-- Table Section -->
+        <section class="table-section">
+            <h2>Sneaker Categories</h2>
+            <table>
+                <caption>Overview of our sneaker categories and their key features.</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Benefits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Running</th>
+                        <td>Lightweight sneakers for athletes.</td>
+                        <td>Enhanced comfort and speed.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Casual</th>
+                        <td>Versatile everyday wear.</td>
+                        <td>Stylish and affordable options.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Limited Edition</th>
+                        <td>Exclusive designer collaborations.</td>
+                        <td>Unique pieces for collectors.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact-form" class="form-section">
+            <h2>Contact SneakerHub</h2>
+            <p>Have questions about our sneakers? Reach out to us!</p>
+            
+            <form action="#" method="post" target="_blank">
+                
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="name">Full Name (10-20 characters):</label>
+                    <input type="text" id="name" name="name" required minlength="10" maxlength="20">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number (max 11 characters):</label>
+                    <input type="tel" id="phone" name="phone" required maxlength="11" placeholder="Please enter a valid phone number">
+
+                    <label for="city">City:</label>
+                    <select id="city" name="city" required>
+                        <option value="">Select a city</option>
+                        <option value="Ikorodu">Ikorodu</option>
+                        <option value="Lagos Island">Lagos Island</option>
+                        <option value="Ikeja">Ikeja</option>
+                        <option value="Epe">Epe</option>
+                        <option value="Maryland">Maryland</option>
+                        <option value="Ebute Metta">Ebute Metta</option>
+                        <option value="Surulere">Surulere</option>
+                        <option value="Ajegunle">Ajegunle</option>
+                        <option value="Lekki">Lekki</option>
+                        <option value="Victoria Island">Victoria Island</option>
+                    </select>
+                </fieldset>
+
+                <!-- Message Fieldset -->
+                <fieldset>
+                    <legend>Message</legend>
+                    <label for="message">Your Message (max 100 characters):</label>
+                    <textarea id="message" name="message" required maxlength="100"></textarea>
+                </fieldset>
+
+                <!-- How Did You Hear About Us -->
+                <p class="question">How did you hear about us?</p>
+                <div class="options">
+                    <label>
+                        <input type="checkbox" name="source" value="Friend" checked>
+                        Friend
+                    </label>
+                    <label>
+                        <input type="checkbox" name="source" value="TS Academy">
+                        TS Academy
+                    </label>
+                    <label>
+                        <input type="checkbox" name="source" value="Others">
+                        Others
+                    </label>
+                </div>
+
+                <!-- Preferred Contact Method -->
+                <p class="question">How should we contact you?</p>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="contact" value="Phone" required>
+                        Phone
+                    </label>
+                    <label>
+                        <input type="radio" name="contact" value="Email">
+                        Email
+                    </label>
+                    <label>
+                        <input type="radio" name="contact" value="Both">
+                        Both
+                    </label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit →</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sneakers</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <p>&copy; 2025 The SneakerHub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
